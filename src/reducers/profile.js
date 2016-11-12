@@ -1,4 +1,9 @@
-const defaultState = {};
+import { TOGGLE_BOOLEAN } from '../constants/types';
+
+const defaultState = {
+  isOk: false,
+  title: '',
+};
 
 /**
 * @param {Object} state - Default aplication state
@@ -7,10 +12,10 @@ const defaultState = {};
 */
 export default function reducer (state = defaultState, action) {
     switch (action.type) {
-      case 'test': {
+      case TOGGLE_BOOLEAN: {
         return {
           ...state,
-          ...action.data,
+          isOk: !state.isOk,
         };
       }
       default: {

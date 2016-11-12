@@ -193,6 +193,7 @@ module.exports = {
         "quote-props": "error",
         "radix": "error",
         "react/prefer-stateless-function": "off",
+        "react/forbid-prop-types": "off",
         "require-jsdoc": "error",
         "rest-spread-spacing": "error",
         "semi": "error",
