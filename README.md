@@ -1,6 +1,6 @@
-# REACT BASIC BOILERPLATE
+# REACT-EXPRESS BASIC BOILERPLATE
 
-This is a simple boilerplate project. It contains the basic necessary when you need to begin a React project, using [Redux](http://redux.js.org/docs/basics/UsageWithReact.html) architecture.
+This is a simple boilerplate project. It contains the basic necessary when you need to begin a React-Express project, using [Redux](http://redux.js.org/docs/basics/UsageWithReact.html) architecture.
 
 Small list of included things in the project
 ---
@@ -12,20 +12,25 @@ Small list of included things in the project
 * Webpack
 * Webpack-dev-server
 
-The source code has this follow structure:
+The React source code has this follow structure:
 ```
-src
-├── actions
-│   └── index.js
-├── components
-│   └── profile-content.jsx
-├── constants
-│   └── types.js
-├── containers
-│   ├── app.jsx
-│   └── profile.jsx
-├── index.jsx
-└── reducers
+View
+└── src
+    ├── actions
+    │   └── index.js
+    ├── components
+    │   └── profile-content.js
+    ├── constants
+    │   └── types.js
+    ├── containers
+    │   ├── app.js
+    │   └── profile.js
     ├── index.js
-    └── profile.js
+    ├── styles
+    │   ├── pages
+    │   │   └── profile-content.scss
+    │   └── style.scss
+    └── reducers
+        ├── index.js
+        └── profile.js
 ```

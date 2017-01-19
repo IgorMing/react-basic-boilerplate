@@ -1,5 +1,13 @@
-**/yarn*
-.yarnclean
-bundle.js
-/node_modules
-npm-debug.log
+View/public/bundle.js*
+.idea
+# Logs
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+node_modules
+.npm
+.node_repl_history

@@ -1,0 +1,60 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react",
+        "json"
+    ],
+    "rules": {
+        "comma-dangle": [
+            2,
+            "never"
+        ],
+        "curly": 2,
+        "dot-notation": 2,
+        "eqeqeq": 2,
+        "func-names": 2,
+        "jsx-quotes": 0,
+        "key-spacing": 0,
+        "no-console": 2,
+        "no-else-return": 2,
+        "no-empty": 2,
+        "no-eval": 2,
+        "no-extra-semi": 2,
+        "no-implied-eval": 2,
+        "no-implicit-globals": 2,
+        "no-mixed-spaces-and-tabs": 0,
+        "no-multi-spaces": 0,
+        "no-native-reassign": 2,
+        "no-self-assign": 2,
+        "no-sparse-arrays": 2,
+        "no-undef": 2,
+        "no-unused-vars": 2,
+        "one-var": 0,
+        "quotes": [
+            2,
+            "single"
+        ],
+        "radix": 2,
+        "react/jsx-uses-vars": 2,
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 2,
+        "semi": 2,
+        "wrap-iife": 2
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}
