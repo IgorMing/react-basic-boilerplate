@@ -10,7 +10,7 @@ export default class ProfileContent extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="profile-content">
         <h1>{title} ({`It's ${isOk}`})</h1>
         <input onChange={onChange} value={title} />
         <button onClick={toggleBoolean}>Toggle</button>
