@@ -18,7 +18,7 @@ module.exports = {
         "accessor-pairs": "error",
         "array-bracket-spacing": "error",
         "array-callback-return": "error",
-        "arrow-body-style": "error",
+        "arrow-body-style": "off",
         "arrow-parens": "error",
         "arrow-spacing": "error",
         "block-scoped-var": "error",
@@ -129,7 +129,7 @@ module.exports = {
         "no-param-reassign": "error",
         "no-path-concat": "error",
         "no-plusplus": "error",
-        "no-process-env": "error",
+        "no-process-env": "off",
         "no-process-exit": "error",
         "no-proto": "error",
         "no-prototype-builtins": "error",
@@ -170,7 +170,7 @@ module.exports = {
         "no-warning-comments": "error",
         "no-whitespace-before-property": "error",
         "no-with": "error",
-        "object-curly-newline": "error",
+        "object-curly-newline": "off",
         "object-curly-spacing": [
             "error",
             "always"
