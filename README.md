@@ -1,31 +1,27 @@
 # REACT BASIC BOILERPLATE
 
-This is a simple boilerplate project. It contains the basic necessary when you need to begin a React project, using [Redux](http://redux.js.org/docs/basics/UsageWithReact.html) architecture.
-
-Small list of included things in the project
+This is a little bit "hipster" React project, using a kind of not usual patterns in his scope. However, I think that should be a great choice for a lot of reasons.
+The stack is following:
 ---
 * React
-* Redux
+* Redux (with ducks concept)
 * Jest
 * Enzyme
 * ESLint (with Airbnb config included)
 * Webpack
 * Webpack-dev-server
 
+Besides that, he project is still missing some tools in stack that I will implement soon. Including the following:
+---
+* Styled components
+* i18n (probably I'll use [react-intl](https://github.com/yahoo/react-intl))
+* Flow
+
 The source code has this follow structure:
 ```
-src
-├── actions
+├── example
+│   ├── duck.js
 │   └── index.js
-├── components
-│   └── profile-content.jsx
-├── constants
-│   └── types.js
-├── containers
-│   ├── app.jsx
-│   └── profile.jsx
-├── index.jsx
-└── reducers
-    ├── index.js
-    └── profile.js
+├── index.js
+└── reducers.js
 ```
