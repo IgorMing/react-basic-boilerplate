@@ -1,13 +1,25 @@
 // actions
-const TOGGLE_BOOLEAN = 'toggle-boolean';
+const ADD_COUNTER = 'example/add_addCounter';
+const MINUS_COUNTER = 'example/minus_addCounter';
+
+const INITIAL_STATE = { count: 0 };
 
 // reducer
-const reducer = (state = {}, action = {}) => {
+const reducer = (state = INITIAL_STATE, action = {}) => {
   switch (action.type) {
-    case TOGGLE_BOOLEAN:
+    case ADD_COUNTER:
+      state.count += 1;
+
       return {
         ...state,
-        isOk: !state.isOk,
+        count: state.count,
+      };
+    case MINUS_COUNTER:
+      state.count -= 1;
+
+      return {
+        ...state,
+        count: state.count,
       };
     default:
       return state;
@@ -17,4 +29,5 @@ const reducer = (state = {}, action = {}) => {
 export default reducer;
 
 // action creators
-export const toggleBoolean = () => ({ type: TOGGLE_BOOLEAN });
+export const minusCounter = () => ({ type: MINUS_COUNTER });
+export const addCounter = () => ({ type: ADD_COUNTER });

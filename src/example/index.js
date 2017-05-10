@@ -1,24 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import { toggleBoolean } from './ducks';
+import * as actions from './ducks';
 
 class Example extends Component {
   render () {
-    const {
-      props: {
-        example: { isOk },
-        toggleBoolean
-      }
+    const { props: {
+        example: { count },
+        addCounter,
+        minusCounter,
+      },
     } = this;
 
     return (
       <div>
-        <button onClick={toggleBoolean}>Click me!</button>
+        <h2>The value selected is {count}</h2>
+        <button onClick={minusCounter}>Minus</button>
+        <button onClick={addCounter}>Add</button>
       </div>
     );
   }
 }
+
+Example.propTypes = {
+  example: PropTypes.shape({
+    addCounter: PropTypes.func,
+    minusCounter: PropTypes.func,
+  }),
+};
 
 /**
 * Convert application state to props.
@@ -26,6 +36,6 @@ class Example extends Component {
 * @returns {Object} Updated props
 */
 const mapStateToProps = state => ({ example: state.example });
-const mapDispatchToProps = { toggleBoolean };
+const mapDispatchToProps = actions;
 
 export default connect(mapStateToProps, mapDispatchToProps)(Example);
