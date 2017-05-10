@@ -12,7 +12,7 @@ The stack is following:
 * Webpack
 * Webpack-dev-server
 
-Besides that, he project is still missing some tools in stack that I will implement soon. Including the following:
+Besides that, the project is still missing some tools in stack that I will implement soon. Including the following:
 
 ---
 * Styled components
