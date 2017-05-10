@@ -1,7 +1,9 @@
 # REACT BASIC BOILERPLATE
 
+
 This is a little bit "hipster" React project, using a kind of not usual patterns in his scope. However, I think that should be a great choice for a lot of reasons.
 The stack is following:
+
 ---
 * React
 * Redux (with ducks concept)
@@ -10,6 +12,7 @@ The stack is following:
 * ESLint (with Airbnb config included)
 * Webpack
 * Webpack-dev-server
+
 
 Besides that, he project is still missing some tools in stack that I will implement soon. Including the following:
 ---
