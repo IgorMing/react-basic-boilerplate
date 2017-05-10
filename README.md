@@ -5,10 +5,10 @@ The stack is following:
 
 ---
 * React
-* Redux (with ducks concept)
+* Redux (with [ducks](https://github.com/erikras/ducks-modular-redux) concept)
 * Jest
 * Enzyme
-* ESLint (with Airbnb config included)
+* ESLint (with [Airbnb config](https://github.com/airbnb/javascript) included)
 * Webpack
 * Webpack-dev-server
 
