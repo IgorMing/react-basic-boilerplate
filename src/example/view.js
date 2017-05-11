@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import Section from '../components/section';
+import Button from '../components/button';
+
 import * as actions from './duck';
 
 class Example extends Component {
@@ -14,11 +17,11 @@ class Example extends Component {
     } = this;
 
     return (
-      <div>
+      <Section>
         <h2>The value selected is {count}</h2>
-        <button onClick={minusCounter}>Minus</button>
-        <button onClick={addCounter}>Add</button>
-      </div>
+        <Button onClick={minusCounter}>Minus</Button>
+        <Button onClick={addCounter}>Add</Button>
+      </Section>
     );
   }
 }

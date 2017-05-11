@@ -11,11 +11,11 @@ The stack is following:
 * ESLint (with [Airbnb config](https://github.com/airbnb/javascript) included)
 * Webpack
 * Webpack-dev-server
+* Styled components
 
 Besides that, the project is still missing some tools in stack that I will implement soon. Including the following:
 
 ---
-* Styled components
 * i18n (probably I'll use [react-intl](https://github.com/yahoo/react-intl))
 * Flow
 
