@@ -21,9 +21,12 @@ Besides that, the project is still missing some tools in stack that I will imple
 
 The source code has this follow structure:
 ```
+├── components
+│   ├── button.js
+│   └── section.js
 ├── example
 │   ├── duck.js
-│   └── index.js
+│   └── view.js
 ├── index.js
 └── reducers.js
 ```
