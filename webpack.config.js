@@ -7,7 +7,7 @@ module.exports = {
     loaders: [
       {
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
       },
     ],
   },
@@ -15,5 +15,5 @@ module.exports = {
     filename: 'bundle.js',
     path: __dirname,
   },
-  resolve: { extensions: ['', '.js'] },
+  resolve: { extensions: ['.js'] },
 };

@@ -33,6 +33,10 @@ Example.propTypes = {
   }),
 };
 
+Example.defaultProps = {
+  example: {},
+};
+
 /**
 * Convert application state to props.
 * @param {Object} state - Application state
