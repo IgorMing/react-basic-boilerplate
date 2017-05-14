@@ -3,6 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -210,7 +211,7 @@ module.exports = {
         "space-infix-ops": "error",
         "space-unary-ops": "error",
         "spaced-comment": "error",
-        "strict": "error",
+        "strict": "off",
         "symbol-description": "error",
         "template-curly-spacing": "error",
         "unicode-bom": [

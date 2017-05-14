@@ -1,3 +1,5 @@
+// @flow
+
 // actions
 const ADD_COUNTER = 'example/addCounter';
 const MINUS_COUNTER = 'example/minusCounter';
@@ -5,7 +7,10 @@ const MINUS_COUNTER = 'example/minusCounter';
 const INITIAL_STATE = { count: 0 };
 
 // reducer
-const reducer = (state = INITIAL_STATE, action = {}) => {
+const reducer = (
+  state: { count: number } = INITIAL_STATE,
+  action: { type: string } = { type: '' },
+) => {
   switch (action.type) {
     case ADD_COUNTER:
       state.count += 1;
