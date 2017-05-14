@@ -57,6 +57,8 @@ module.exports = {
         "id-blacklist": "error",
         "id-length": "error",
         "id-match": "error",
+        //"import/extensions": "off",
+        //"import/no-unresolved": "off",
         "indent": "off",
         "init-declarations": "error",
         "jsx-quotes": "error",

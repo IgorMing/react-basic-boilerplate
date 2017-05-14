@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     'babel-polyfill',
@@ -15,5 +17,11 @@ module.exports = {
     filename: 'bundle.js',
     path: __dirname,
   },
-  resolve: { extensions: ['.js'] },
+  resolve: {
+    extensions: ['.js'],
+    modules: [
+      path.resolve('src'),
+      path.resolve('node_modules'),
+    ],
+  },
 };

@@ -1,6 +1,6 @@
 // actions
-const ADD_COUNTER = 'example/add_addCounter';
-const MINUS_COUNTER = 'example/minus_addCounter';
+const ADD_COUNTER = 'example/addCounter';
+const MINUS_COUNTER = 'example/minusCounter';
 
 const INITIAL_STATE = { count: 0 };
 
@@ -29,5 +29,5 @@ const reducer = (state = INITIAL_STATE, action = {}) => {
 export default reducer;
 
 // action creators
-export const minusCounter = () => ({ type: MINUS_COUNTER });
 export const addCounter = () => ({ type: ADD_COUNTER });
+export const minusCounter = () => ({ type: MINUS_COUNTER });
