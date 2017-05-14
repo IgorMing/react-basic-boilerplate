@@ -40,18 +40,12 @@ Besides that, he project is still missing some tools in stack that I will implem
 * i18n (probably I'll use [react-intl](https://github.com/yahoo/react-intl))
 * Flow
 
-The source code has this follow structure:
-```
-├── example
-│   ├── duck.js
-│   └── index.js
-├── index.js
-└── reducers.js
-```
-
 > You're able to import everything using modular paths
+
 > With `components/resource` instead of `../../components/resource`
+
 > It's completely optional :)
+
 > Just take care with linter errors. Adding an ignore comment or finding a real solution and sending a Pull Request ;)
 
 The source code has this follow structure:
