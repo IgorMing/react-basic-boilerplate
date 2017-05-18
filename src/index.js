@@ -4,13 +4,13 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import reducers from './reducers';
-import Example from './example/view';
+import NewExample from './newExample/view';
 
 const store = createStore(reducers);
 
 render(
   <Provider store={store}>
-    <Example />
+    <NewExample />
   </Provider>,
   document.querySelector('#app'),
 );
